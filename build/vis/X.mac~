@@ -1,0 +1,3 @@
+/vis/open OGLIX
+/control/execute vis/vis.mac
+/vis/ogl/printEPS

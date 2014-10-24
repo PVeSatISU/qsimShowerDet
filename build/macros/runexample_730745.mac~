@@ -1,0 +1,31 @@
+# Example macro for qsim
+
+/qsim/filename /home/bulacarl/solid/data/qsim_ShowerMaxDet_Qthickness_5mm_Wthickness_2,4mm_electrons_emin_2GeV_emax_2GeV_xmin_-122,6mm_xmax_122,6mm_ymin_-100mm_ymax_-100mm_zmin_-74,5mm_zmax_79,5mm_QER7723Q_seed_730745_events_1E3.out
+
+/qsim/seed 730745
+
+/qsim/xmin -122.6 mm
+/qsim/xmax  122.6 mm
+
+/qsim/ymin  -100.0 cm
+/qsim/ymax  -100.0 cm
+
+/qsim/zmin -74.5 mm
+/qsim/zmax  79.5 mm
+
+/qsim/emin   2 GeV
+/qsim/emax   2 GeV
+
+/qsim/thetaMin    90 deg
+/qsim/thetaMax    90 deg
+/qsim/phiMin      90 deg
+/qsim/phiMax      90 deg
+
+/gun/particle e-
+#/gun/particle mu-
+
+#/control/execute vis/Qt.mac
+
+#/tracking/verbose 2
+
+/run/beamOn 1000

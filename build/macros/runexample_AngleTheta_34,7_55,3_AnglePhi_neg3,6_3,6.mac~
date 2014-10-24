@@ -1,0 +1,33 @@
+# Example macro for qsim
+
+/qsim/filename /home/bulacarl/solid/data/qsim_thickness_10mm_separation_5mm_events_1_NoMirrors_AngleTheta_34,7_55,3_AnglePhi_-3,6_3,6_Muons_Source_xmin_-59_xmax_-39_ymin_-3,5_ymax_3,5_zmin_-65cm_zmax_-47cm_seed_730745.out
+
+/qsim/seed 730745
+
+/qsim/xmin -59.0 cm
+/qsim/xmax -39.0 cm
+
+/qsim/ymin  -3.5 cm
+/qsim/ymax   3.5 cm
+
+/qsim/zmin -65.0 cm
+/qsim/zmax -47.0 cm
+
+/qsim/emin   850 MeV
+/qsim/emax   850 MeV
+
+/qsim/thetaMin   34.7 deg
+/qsim/thetaMax   55.3 deg
+/qsim/phiMin     -3.6 deg
+/qsim/phiMax      3.6 deg
+
+#/gun/particle e-
+/gun/particle mu-
+
+/control/execute vis/Qt.mac
+
+#/tracking/verbose 2
+
+/run/beamOn 1
+
+/vis/ogl/printEPS

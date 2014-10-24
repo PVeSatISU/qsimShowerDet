@@ -1,0 +1,32 @@
+# Example macro for qsim
+
+/qsim/filename /home/bulacarl/solid/data/qsim.out
+
+#/qsim/seed 730745
+
+/qsim/xmin 0.0 mm
+/qsim/xmax 0.0 mm
+
+/qsim/ymin  -2.5 mm
+/qsim/ymax  69.10 mm
+
+/qsim/zmin 0.0 mm
+/qsim/zmax 0.0 mm
+
+/qsim/emin   7 eV
+/qsim/emax   7 eV
+
+/qsim/thetaMin    135 deg
+/qsim/thetaMax    135 deg
+/qsim/phiMin      90 deg
+/qsim/phiMax      90 deg
+
+/gun/particle opticalphoton
+#/gun/particle e-
+#/gun/particle mu-
+
+#/control/execute vis/Qt.mac
+
+#/tracking/verbose 2
+
+/run/beamOn 100

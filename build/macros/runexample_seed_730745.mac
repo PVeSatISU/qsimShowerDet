@@ -1,0 +1,31 @@
+# Example macro for qsim
+
+/qsim/filename /home/bulacarl/solid/data/qsim_thickness_10mm_separation_5mm_events_1E5_NoMirrors_AngleTheta_0_0_AnglePhi_0_0_Electrons_emin_2GeV_emax_2GeV_Source_xmin_-59_xmax_-59_ymin_0,0_ymax_0,0_zmin_-59_zmax_-59_QER7723Q_seed_730745.out
+
+/qsim/seed 730745
+
+/qsim/xmin  0.0 cm
+/qsim/xmax  0.0 cm
+
+/qsim/ymin  0.0 cm
+/qsim/ymax  0.0 cm
+
+/qsim/zmin -59.0 cm
+/qsim/zmax -59.0 cm
+
+/qsim/emin   2 GeV
+/qsim/emax   2 GeV
+
+/qsim/thetaMin    0 deg
+/qsim/thetaMax    0 deg
+/qsim/phiMin      0 deg
+/qsim/phiMax      0 deg
+
+/gun/particle e-
+#/gun/particle mu-
+
+#/control/execute vis/Qt.mac
+
+#/tracking/verbose 2
+
+/run/beamOn 100000
